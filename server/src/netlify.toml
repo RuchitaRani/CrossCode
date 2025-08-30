@@ -1,0 +1,7 @@
+[build]
+  base = "client"
+  publish = "client/build"
+  functions = "server"
+
+[build.environment]
+  REACT_APP_SOCKET_SERVER_URL = "/.netlify/functions/socket"
